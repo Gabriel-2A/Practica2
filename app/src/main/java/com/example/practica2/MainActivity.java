@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.practica2.Lista.Nodo;
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if(etGuardar.getText().toString().trim().equals("") || etGuardar.getText().toString().trim().equals(".")){
-                    System.out.println("Error");
+                    Toast.makeText(getApplicationContext(),"Dato no aceptado",Toast.LENGTH_SHORT).show();
                 }else {
                     double aux = Double.parseDouble(etGuardar.getText().toString().trim());
                     primero = new Nodo(aux, primero);
