@@ -21,17 +21,40 @@
         android:layout_below="@id/etGuardar"/>
 
     <TextView
+        android:id="@+id/tvSueldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvSueldo"
-        android:layout_below="@id/bAgregar"/>
+        android:layout_below="@id/bAgregar"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvPosicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSueldo"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvImparOPar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPosicion"
+        android:textColor="@color/white"/>
 
     <ListView
         android:id="@+id/lvLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvSueldo" />
+        android:layout_below="@id/tvImparOPar" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bBuscar"
+        android:hint="Buscar"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/etGuardar"
+        android:layout_alignParentRight="true"/>
 
 
 </RelativeLayout>
