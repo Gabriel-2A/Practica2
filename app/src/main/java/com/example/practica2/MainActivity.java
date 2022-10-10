@@ -101,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
                         tvPosicion.setText("No existe el dato");
                         System.out.println("No existe el dato");
                     } else {
-                        Log.i("Log", "El sueldo se encuentra en la posicion: " + cont);
-                        tvPosicion.setText("El sueldo se encuentra en la posicion: " + cont);
+                        Log.i("Log", "El sueldo se encuentra en la posicion: " + indice);
+                        tvPosicion.setText("El sueldo se encuentra en la posicion: " + indice);
 
                         if (indice % 2 == 0) {
                             Log.i("Log", "La posicion del sueldo es par");
